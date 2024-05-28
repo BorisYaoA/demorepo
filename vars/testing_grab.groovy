@@ -1,3 +1,10 @@
+@GrabConfig(systemProperties = [
+        'groovy.grape.report.downloads = true',
+        'groovy.grape.enableSearch = true',
+        'groovy.grape.connection.timeout = 5000',
+        'groovy.grape.read.timeout = 30000'
+])
+
 // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 @Grab(group='org.apache.commons', module='commons-lang3', version='3.5')
 @Grab(group='org.apache.maven', module='maven-model', version='3.3.9')
